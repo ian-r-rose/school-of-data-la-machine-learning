@@ -1,65 +1,35 @@
-# Scikit-learn Tutorial
+<div style="display: flex; width: 100%">
+    <img style="height: 200px" src=./images/pink-donut-logo.png />
+    <img style="height: 200px" src=./images/schoolofdata-logo.png />
+</div>
 
-*Jake VanderPlas*
+<small><i>This tutorial is modeled after a series of tutorials by [Jake Vanderplas](http://www.vanderplas.com). Text, code, and licenses to those may be found [here](https://github.com/jakevdp)</i></small>
 
-- email: <jakevdp@uw.edu>
-- twitter: [@jakevdp](https://twitter.com/jakevdp)
-- github: [jakevdp](http://github.com/jakevdp)
+# Introduction to Machine Learning
+#### Ian Rose (Project Jupyter) February 2, 2019
 
-This repository contains notebooks and other files associated with my
-[Scikit-learn](http://scikit-learn.org) tutorial.
+## What is a model?
 
-## Installation Notes
-This tutorial requires the following packages:
+We are often faced with a pile of data, and no notion of what to do with it.
+We know that the data reflects some information about the real world, but not necessarily what that is, and how to get at it.
 
-- Python version 2.6-2.7 or 3.3+
-- `numpy` version 1.5 or later: http://www.numpy.org/
-- `scipy` version 0.10 or later: http://www.scipy.org/
-- `matplotlib` version 1.3 or later: http://matplotlib.org/
-- `scikit-learn` version 0.14 or later: http://scikit-learn.org
-- `ipython` version 2.0 or later, with notebook support: http://ipython.org
-- `seaborn` version 0.5 or later
+A model is a representation of a real-world process that we want to understand.
+They can be qualitative or quantitative, complex or simple.
+Broadly speaking, models are useful in two ways:
 
-The easiest way to get these is to use the [conda](https://store.continuum.io/) environment manager.
-I suggest downloading and installing [miniconda](http://conda.pydata.org/miniconda.html).
+1. They provide understanding. Models are simpler than the real world, and the specific "physics" of a model can often be interpreted in terms of plain language. Frequently the interpretability of a model is among the most attractive of its attributes.
 
-Once this is installed, the following command will install all required packages in your Python environment:
-```
-Original install (2015)
-$ conda install numpy scipy matplotlib scikit-learn ipython-notebook seaborn
+2. They have predictive power. You can use a good model of the real world to predict the behavior of hypothetical data or data you have not seen before. You can use these predictions to provide guidance for future data collection, policy, and model refinements.
 
-Or for current versions of Anaconda (Mar 2018)
- 
-$ conda create -n skl_tut python=3.4.5 ipywidgets=5.2.2 numpy scipy matplotlib scikit-learn ipython-notebook seaborn pillow
+## What is machine learning?
 
-$ activate skl_tut
+Machine learning is the process of building statistical models using computers.
+You typically ingest existing data to fit a model, and then use that model to predict values from data that the model has not seen before.
 
-$ jupyter notebook --notebook-dir='<tutorial folder>'
-```
+There are many different classes of model, and many different methods of fitting and predicting, but they all follow this general pattern.
 
-Alternatively, you can download and install the (very large) Anaconda software distribution, found at https://store.continuum.io/.
+## This tutorial
 
-## Downloading the Tutorial Materials
-I would highly recommend using git, not only for this tutorial, but for the
-general betterment of your life.  Once git is installed, you can clone the
-material in this tutorial by using the git address shown above:
-
-    git clone git://github.com/jakevdp/sklearn_tutorial.git
-
-If you can't or don't want to install git, there is a link above to download
-the contents of this repository as a zip file.  I may make minor changes to
-the repository in the days before the tutorial, however, so cloning the
-repository is a much better option.
-
-
-## Notebook Listing
-You can [view the tutorial materials](http://nbviewer.ipython.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb) using the excellent nbviewer service.
-
-Note, however, that you cannot modify or run the contents within nbviewer.
-To modify them, first download the tutorial repository, change to the notebooks directory, and run ``ipython notebook``.
-You should see the list in the ipython notebook launch page in your web browser.
-For more information on the IPython notebook, see http://ipython.org/notebook.html
-
-Note also that some of the code in these notebooks will not work outside the
-directory structure of this tutorial, so it is important to clone the full
-repository if possible.
+This tutorial consists of several exercises that introduce the user to simple machine learning.
+They use the de facto standard Python scientific software stack,
+principally numpy, scipy, matplotlib, pandas, and (crucially) scikit-learn.
