@@ -6,7 +6,7 @@
 <small><i>This tutorial is modeled after a series of tutorials by [Jake Vanderplas](http://www.vanderplas.com). Text, code, and licenses to those may be found [here](https://github.com/jakevdp)</i></small>
 
 # Introduction to Machine Learning
-#### Ian Rose (Project Jupyter) February 2, 2019
+#### Ian Rose (Project Jupyter) February 1, 2019
 
 This tutorial can be read and executed at https://tinyurl.com/la-ml-demo
 
@@ -26,7 +26,8 @@ Broadly speaking, models are useful in two ways:
 ## What is machine learning?
 
 Machine learning is the process of building statistical models using computers.
-You typically ingest existing data to fit a model, and then use that model to predict values from data that the model has not seen before.
+These models have tunable parameters (usually numbers), which are adjusted to fit existing data.
+You can then use that model to predict values from data that the model has not seen before.
 
 There are many different classes of model, and many different methods of fitting and predicting, but they all follow this general pattern.
 
