@@ -8,9 +8,11 @@
 # Introduction to Machine Learning
 #### Ian Rose (Project Jupyter) February 2, 2019
 
+This tutorial can be read and executed at https://tinyurl.com/la-ml-demo
+
 ## What is a model?
 
-We are often faced with a pile of data, and no notion of what to do with it.
+We are often faced with a pile of data and little notion of what to do with it.
 We know that the data reflects some information about the real world, but not necessarily what that is, and how to get at it.
 
 A model is a representation of a real-world process that we want to understand.
@@ -32,4 +34,16 @@ There are many different classes of model, and many different methods of fitting
 
 This tutorial consists of several exercises that introduce the user to simple machine learning.
 They use the de facto standard Python scientific software stack,
-principally numpy, scipy, matplotlib, pandas, and (crucially) scikit-learn.
+principally numpy, scipy, matplotlib, pandas, and scikit-learn.
+
+First is an introduction to machine learning and some motivating examples:
+
+[Introduction and Motivation](./notebooks/01-motivation-regression-classification.ipynb)
+
+Second is an introduction to the workhorse of Python machine learning: scikit-learn:
+
+[Introduction to scikit-learn](./notebooks/02-introducing-sklearn.ipynb)
+
+Finally, we perform an example analysis of ridership data for Metro bikeshare:
+
+[Metro Bikeshare](./notebooks/03-metro-bikeshare-regression.ipynb)
